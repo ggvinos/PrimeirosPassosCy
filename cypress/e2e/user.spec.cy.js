@@ -5,6 +5,9 @@ import MenuPage from '../pages/menuPage.js';
 import MyInfoPage from '../pages/myInfoPage.js';
 
 const Chance = require('chance');
+const formatDate = (date) => {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+};
 
 const chance = new Chance();
 const loginPage = new LoginPage()
@@ -24,8 +27,11 @@ describe('Oranfe HRM Tests', () => {
 
     menuPage.accessMyInfo()
 
+    const randomDate = chance.date();
+    const formattedDate = formatDate(randomDate);
+
     myInfoPage.fillPersonalDetails(chance.first(), chance.last(), chance.last())
-    myInfoPage.fillEmployeeDetails(chance.animal(), chance.animal({type: 'zoo'}), chance.string({ length: 5 }), chance.date({string: false, american: true}))
+    myInfoPage.fillEmployeeDetails(chance.animal(), chance.animal({type: 'zoo'}), chance.string({ length: 5 }), formattedDate)
     myInfoPage.fillStatus()
     myInfoPage.saveForm()
   

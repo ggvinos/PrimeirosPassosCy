@@ -16,6 +16,7 @@ class MenuPage {
     acesssorPerfomance(){
         cy.get(this.selectorsList().performanceButton).click()
     }
+    
 
 }
 

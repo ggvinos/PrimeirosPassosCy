@@ -1,6 +1,6 @@
 import userData from '../fixtures/user-data.json'
 import LoginPage from '../pages/loginPage.js'
-import DashboardPage from '../pages/DashboardPage.js';
+import DashboardPage from '../pages/dashboardPage.js';
 import MenuPage from '../pages/menuPage.js';
 import MyInfoPage from '../pages/myInfoPage.js';
 

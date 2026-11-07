@@ -1,4 +1,6 @@
 # 🧪 Primeiros Passos com Cypress
+
+[![cypress](https://github.com/ggvinos/PrimeirosPassosCy/actions/workflows/cypress.yml/badge.svg)](https://github.com/ggvinos/PrimeirosPassosCy/actions/workflows/cypress.yml)
 Este projeto foi desenvolvido para explorar e praticar testes automatizados utilizando Cypress. Ele simula testes de login e atualização de informações de usuário na plataforma OrangeHRM, aplicando boas práticas como o Page Object Model (POM) e o uso de fixtures para gerenciamento de dados.
 
 ## 🚀 Tecnologias Utilizadas
